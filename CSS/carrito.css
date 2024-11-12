@@ -1,0 +1,38 @@
+
+
+
+/* Estilo para el contenedor principal */
+.container {
+    display: flex; /* Usamos flexbox para organizar las columnas */
+    justify-content: space-between; /* Espacio entre las columnas */
+    padding: 80px;
+}
+
+/* Columna izquierda: Catálogo de productos */
+.productos-left {
+    width: 48%; /* Ocupa el 48% del contenedor */
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Columna derecha: Carrito de compras */
+.carrito-right {
+    width: 48%; /* Ocupa el 48% del contenedor */
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsividad para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Apilamos las columnas en pantallas pequeñas */
+        align-items: center;
+    }
+
+    .productos-left, .carrito-right {
+        width: 100%; /* En pantallas pequeñas, ambas columnas ocupan el 100% */
+    }
+}
+
